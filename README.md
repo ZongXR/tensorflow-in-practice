@@ -1,2 +1,64 @@
-# introduction-tensorflow
-tensorflow入门
+<h1>tensorflow入门</h1>
+<h2>这是什么</h2>
+这是coursera平台tensorflow课程(<a href="https://www.coursera.org/learn/introduction-tensorflow" target="_blank">地址</a>)入门代码，随堂练习+课后作业
+<h2>目录结构</h2>
+<ol>
+    <li>一种新的编程范式
+        <ul>
+            <li><a href="./1st%20-%20A%20New%20Programing%20Paradigm/LinearRegression.py">线性回归</a></li>
+            <li><a href="./1st%20-%20A%20New%20Programing%20Paradigm/Exercise_1_House_Prices_Question.py" target="_blank">房价回归模型</a></li>
+        </ul>
+    </li>
+    <li>编写计算机视觉神经网络
+        <ul>
+            <li><a href="2nd - Coding a Computer Vision Neural Network/FashionMNIST.py" target="_blank">衣裤鞋包识别</a></li>
+        </ul>
+    </li>
+</ol>
+<h2>tensorflow的包结构</h2>
+<ul>
+    <li>keras
+        <ul>
+            <li>layers
+                <ul>
+                    <li>Dense</li>
+                    <li>Flatten</li>
+                </ul>
+            </li>
+            <li>models
+                <ul>
+                    <li>Sequential</li>
+                    <li>Model</li>
+                </ul>
+            </li>
+            <li>datasets
+                <ul>
+                    <li>fashion_mnist</li>
+                </ul>
+            </li>
+            <li>optimizers
+                <ul>
+                    <li>Adam</li>
+                </ul>
+            </li>
+            <li>callbacks
+                <ul>
+                    <li>Callback</li>
+                    <li>TensorBoard</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>nn
+        <ul>
+            <li>relu</li>
+            <li>softmax</li>
+        </ul>
+    </li>
+    <li>optimizers
+        <ul>
+            <li>Adam</li>
+        </ul>
+    </li>
+</ul>
+
