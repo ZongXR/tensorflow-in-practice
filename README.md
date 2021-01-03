@@ -19,7 +19,6 @@
         <ul>
             <li>
             <a href="./3rd - Enhancing Vision with Convolutional Neural Networks/FashionMNIST.py" target="_blank">衣裤鞋包识别</a><br />
-            <img src="./imgs/inner_weights.png" alt="内部识别结果">
             </li>
         </ul>
     </li>
@@ -78,4 +77,14 @@
         </ul>
     </li>
 </ul>
+<h2>图形展示</h2>
+<h3>卷积神经网络内部做了什么</h3>
+<img src="./imgs/inner_weights.png" alt="内部识别结果">
+<h3>卷积层和池化层</h3>
+<p>原图</p>
+<img src="./imgs/ConvAndPooling_0.png" alt="原图" />
+<p>卷积后输出</p>
+<img src="./imgs/ConvAndPooling_1.png" alt="卷积后输出" />
+<p>池化后输出</p>
+<img src="./imgs/ConvAndPooling_2.png" alt="最大池化后输出" />
 
