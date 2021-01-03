@@ -14,8 +14,11 @@
       <w>keras</w>
       <w>matplotlib</w>
       <w>mnist</w>
+      <w>mpimg</w>
+      <w>preprocessing</w>
       <w>relu</w>
       <w>softmax</w>
+      <w>sprop</w>
       <w>tensorflow</w>
     </words>
   </dictionary>

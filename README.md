@@ -50,6 +50,7 @@
             <li>optimizers
                 <ul>
                     <li>Adam</li>
+                    <li>RMSprop</li>
                 </ul>
             </li>
             <li>callbacks
@@ -63,6 +64,17 @@
                     <li>clear_session</li>
                 </ul>
             </li>
+            <li>preprocessing
+                <ul>
+                    <li>image
+                        <ul>
+                            <li>ImageDataGenerator</li>
+                            <li>load_img</li>
+                            <li>img_to_array</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </li>
     <li>nn
@@ -74,6 +86,19 @@
     <li>optimizers
         <ul>
             <li>Adam</li>
+            <li>RMSprop</li>
+        </ul>
+    </li>
+    <li>compat
+        <ul>
+            <li>v1
+                <ul>
+                    <li>ConfigProto</li>
+                    <li>Session</li>
+                </ul>
+            </li>
+            <li>v2
+            </li>
         </ul>
     </li>
 </ul>
@@ -87,4 +112,6 @@
 <img src="./imgs/ConvAndPooling_1.png" alt="卷积后输出" />
 <p>池化后输出</p>
 <img src="./imgs/ConvAndPooling_2.png" alt="最大池化后输出" />
+<h3>人马分类</h3>
+<img src="./imgs/人马图片.png" alt="人马图片" />
 
