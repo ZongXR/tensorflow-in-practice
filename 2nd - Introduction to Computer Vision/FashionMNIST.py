@@ -115,7 +115,7 @@ if __name__ == '__main__':
     )
     # 训练
     try:
-        model.load_weights("../models/FashionMNIST.h5")
+        model.load_weights("../models/FashionMNIST_Dense.h5")
     except OSError:
         model.fit(
             x=x_train,

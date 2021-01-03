@@ -1,12 +1,17 @@
 <component name="ProjectDictionaryState">
   <dictionary name="DrZon">
     <words>
+      <w>classificaiton</w>
+      <w>conv</w>
+      <w>convolutional</w>
       <w>coursera</w>
       <w>crossentropy</w>
       <w>datas</w>
       <w>datasets</w>
+      <w>idxs</w>
       <w>imgs</w>
       <w>keras</w>
+      <w>matplotlib</w>
       <w>mnist</w>
       <w>relu</w>
       <w>softmax</w>

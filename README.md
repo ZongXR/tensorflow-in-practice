@@ -5,13 +5,22 @@
 <ol>
     <li>一种新的编程范式
         <ul>
-            <li><a href="./1st%20-%20A%20New%20Programing%20Paradigm/LinearRegression.py">线性回归</a></li>
-            <li><a href="./1st%20-%20A%20New%20Programing%20Paradigm/Exercise_1_House_Prices_Question.py" target="_blank">房价回归模型</a></li>
+            <li><a href="./1st - A New Programing Paradigm/LinearRegression.py">线性回归</a></li>
+            <li><a href="./1st - A New Programing Paradigm/HousePrices.py" target="_blank">房价回归模型</a></li>
         </ul>
     </li>
     <li>编写计算机视觉神经网络
         <ul>
-            <li><a href="2nd - Coding a Computer Vision Neural Network/FashionMNIST.py" target="_blank">衣裤鞋包识别</a></li>
+            <li><a href="./2nd - Introduction to Computer Vision/FashionMNIST.py" target="_blank">衣裤鞋包识别</a></li>
+            <li><a href="./2nd - Introduction to Computer Vision/HandwritingRecognition.py" target="_blank">手写字符识别</a></li>
+        </ul>
+    </li>
+    <li>使用卷积神经网络增强
+        <ul>
+            <li>
+            <a href="./3rd - Enhancing Vision with Convolutional Neural Networks/FashionMNIST.py" target="_blank">衣裤鞋包识别</a><br />
+            <img src="./imgs/inner_weights.png" alt="内部识别结果">
+            </li>
         </ul>
     </li>
 </ol>
@@ -23,6 +32,8 @@
                 <ul>
                     <li>Dense</li>
                     <li>Flatten</li>
+                    <li>Conv2D</li>
+                    <li>MaxPooling2D</li>
                 </ul>
             </li>
             <li>models
@@ -34,6 +45,7 @@
             <li>datasets
                 <ul>
                     <li>fashion_mnist</li>
+                    <li>mnist</li>
                 </ul>
             </li>
             <li>optimizers
@@ -45,6 +57,11 @@
                 <ul>
                     <li>Callback</li>
                     <li>TensorBoard</li>
+                </ul>
+            </li>
+            <li>backend
+                <ul>
+                    <li>clear_session</li>
                 </ul>
             </li>
         </ul>
