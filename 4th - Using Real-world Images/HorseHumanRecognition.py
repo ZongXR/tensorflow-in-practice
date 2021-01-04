@@ -4,7 +4,7 @@ import matplotlib.image as mpimg
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPool2D
 from tensorflow.keras.optimizers import RMSprop
-from tensorflow.keras.callbacks import Callback
+from tensorflow.keras.callbacks import Callback, TensorBoard
 from tensorflow.keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array
 import tensorflow as tf
 import os
@@ -104,16 +104,22 @@ if __name__ == '__main__':
     for physical_device in physical_devices:
         tf.config.experimental.set_memory_growth(physical_device, enable=True)
     # 显示图片
-    print(os.listdir("../data/train_data/horses")[0:10])
-    print(os.listdir("../data/train_data/humans")[0:10])
-    print(len(os.listdir("../data/train_data/horses")))
-    print(len(os.listdir("../data/train_data/humans")))
-    show_imgs((1, 20, 300, 43), "../data/train_data")
+    print(os.listdir("../data/HorseAndHuman/train_data/horses")[0:10])
+    print(os.listdir("../data/HorseAndHuman/train_data/humans")[0:10])
+    print(len(os.listdir("../data/HorseAndHuman/train_data/horses")))
+    print(len(os.listdir("../data/HorseAndHuman/train_data/humans")))
+    show_imgs((1, 20, 300, 43), "../data/HorseAndHuman/train_data")
     train_generator = ImageDataGenerator(rescale=1/255).flow_from_directory(
-        directory="../data",
+        directory="../data/HorseAndHuman/train_data",
         target_size=(300, 300),
         class_mode="binary",
         batch_size=128
+    )
+    validation_generator = ImageDataGenerator(rescale=1/255).flow_from_directory(
+        directory="../data/HorseAndHuman/validation_data",
+        target_size=(300, 300),
+        class_mode="binary",
+        batch_size=32
     )
     model = build_model((300, 300, 3), 1)
     try:
@@ -121,12 +127,16 @@ if __name__ == '__main__':
     except OSError:
         model.fit_generator(
             generator=train_generator,
+            validation_data=validation_generator,
             epochs=15,
             # steps_per_epoch=8,
-            callbacks=[MyCallback()]
+            callbacks=[
+                MyCallback(),
+                TensorBoard(log_dir="../logs/%s" % os.path.basename(__file__))
+            ]
         )
         model.save_weights("../models/HorseAndHuman.h5")
-    predict(model, "../data/predict")
+    predict(model, "../data/HorseAndHuman/predict")
 
 
 

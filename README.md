@@ -1,6 +1,9 @@
-<h1>tensorflow入门</h1>
+<h1>tensorflow实践案例</h1>
 <h2>这是什么</h2>
-这是coursera平台tensorflow课程(<a href="https://www.coursera.org/learn/introduction-tensorflow" target="_blank">地址</a>)入门代码，随堂练习+课后作业
+这是coursera平台<a href="https://www.coursera.org/professional-certificates/tensorflow-in-practice" target="_blank">tensorflow课程</a>代码，随堂练习+课后作业
+<ol>
+    <li><a href="https://www.coursera.org/learn/introduction-tensorflow" target="_blank">tensorflow入门</a></li>
+</ol>
 <h2>目录结构</h2>
 <ol>
     <li>一种新的编程范式
@@ -12,14 +15,20 @@
     <li>编写计算机视觉神经网络
         <ul>
             <li><a href="./2nd - Introduction to Computer Vision/FashionMNIST.py" target="_blank">衣裤鞋包识别</a></li>
-            <li><a href="./2nd - Introduction to Computer Vision/HandwritingRecognition.py" target="_blank">手写字符识别</a></li>
+            <li><a href="./2nd - Introduction to Computer Vision/HandwritingRecognition.py" target="_blank">手写数字识别</a></li>
         </ul>
     </li>
     <li>使用卷积神经网络增强
         <ul>
-            <li>
-            <a href="./3rd - Enhancing Vision with Convolutional Neural Networks/FashionMNIST.py" target="_blank">衣裤鞋包识别</a><br />
-            </li>
+            <li><a href="./3rd - Enhancing Vision with Convolutional Neural Networks/FashionMNIST.py" target="_blank">基于卷积神经网络的衣裤鞋包识别</a></li>
+            <li><a href="./3rd - Enhancing Vision with Convolutional Neural Networks/HandwritingRecognition.py" target="_blank">基于卷积神经网络的手写数字识别</a></li>
+            <li><a href="./3rd - Enhancing Vision with Convolutional Neural Networks/ConvAndPooling.py" target="_blank">手动实现卷积层和池化层</a></li>
+        </ul>
+    </li>
+    <li>使用真实图片
+        <ul>
+            <li><a href="./4th - Using Real-world Images/HorseHumanRecognition.py" target="_blank">人马分类器</a></li>
+            <li><a href="./4th - Using Real-world Images/HappySadClassifier.py" target="_blank">高兴悲伤分类器</a></li>
         </ul>
     </li>
 </ol>
