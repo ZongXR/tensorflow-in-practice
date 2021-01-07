@@ -119,8 +119,19 @@
 </ul>
 <h2>图形展示</h2>
 <h3>卷积神经网络内部做了什么</h3>
+<h4>对于时尚商品分类，从左至右网络不断加深</h4>
 <img src="./imgs/inner_weights.png" alt="内部识别结果">
-<h3>卷积层和池化层</h3>
+<h4>对于猫狗识别，从上至下网络不断加深</h4>
+<img src="./imgs/conv2d_1.jpg" alt="第一层卷积"><br />
+<img src="./imgs/pool2d_1.jpg" alt="第一层池化"><br />
+<img src="./imgs/conv2d_2.jpg" alt="第二层卷积"><br />
+<img src="./imgs/pool2d_2.jpg" alt="第二层池化"><br />
+<img src="./imgs/conv2d_3.jpg" alt="第三层卷积"><br />
+<img src="./imgs/pool2d_3.jpg" alt="第三层池化"><br />
+<img src="./imgs/conv2d_4.jpg" alt="第四层卷积"><br />
+<img src="./imgs/pool2d_4.jpg" alt="第四层池化"><br />
+<img src="./imgs/conv2d_5.jpg" alt="第五层卷积"><br />
+<h3>卷积层和池化层做了些什么</h3>
 <p>原图</p>
 <img src="./imgs/origin.png" alt="原图" />
 <p>卷积后输出</p>

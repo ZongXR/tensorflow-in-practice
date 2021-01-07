@@ -7,3 +7,4 @@ if __name__ == '__main__':
     clf.build_model()
     clf.fit("./data/cats_and_dogs_filtered")
     clf.save_weights()
+    clf.show_inner("./data/cats_and_dogs_filtered/train/cats/cat.57.jpg", "./imgs")
