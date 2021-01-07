@@ -17,6 +17,7 @@
       <w>mnist</w>
       <w>mpimg</w>
       <w>preprocessing</w>
+      <w>regressor</w>
       <w>relu</w>
       <w>softmax</w>
       <w>sprop</w>

@@ -4,34 +4,38 @@
 <ol>
     <li><a href="https://www.coursera.org/learn/introduction-tensorflow" target="_blank">tensorflow入门</a></li>
 </ol>
-<h2>目录结构</h2>
-<ol>
-    <li>一种新的编程范式
+<h2>模型</h2>
+<ul>
+    <li>分类
         <ul>
-            <li><a href="./1st - A New Programing Paradigm/LinearRegression.py">线性回归</a></li>
-            <li><a href="./1st - A New Programing Paradigm/HousePrices.py" target="_blank">房价回归模型</a></li>
+            <li><a href="./classifier/FashionClassifier.py" target="_blank">时尚商品分类器</a></li>
+            <li><a href="./classifier/HandwritingClassifier.py" target="_blank">手写数字分类器</a></li>
+            <li><a href="./classifier/HorseHumanClassifier.py" target="_blank">人马分类器</a></li>
+            <li><a href="./classifier/HappySadClassifier.py" target="_blank">高兴悲伤分类器</a></li>
+            <li><a href="./classifier/CatDogClassifier.py" target="_blank">猫狗分类器</a></li>
         </ul>
     </li>
-    <li>编写计算机视觉神经网络
+    <li>回归
         <ul>
-            <li><a href="./2nd - Introduction to Computer Vision/FashionMNIST.py" target="_blank">衣裤鞋包识别</a></li>
-            <li><a href="./2nd - Introduction to Computer Vision/HandwritingRecognition.py" target="_blank">手写数字识别</a></li>
+            <li><a href="./regressor/LinearRegressor.py" target="_blank">一元线性回归</a></li>
         </ul>
     </li>
-    <li>使用卷积神经网络增强
+    <li>工具
         <ul>
-            <li><a href="./3rd - Enhancing Vision with Convolutional Neural Networks/FashionMNIST.py" target="_blank">基于卷积神经网络的衣裤鞋包识别</a></li>
-            <li><a href="./3rd - Enhancing Vision with Convolutional Neural Networks/HandwritingRecognition.py" target="_blank">基于卷积神经网络的手写数字识别</a></li>
-            <li><a href="./3rd - Enhancing Vision with Convolutional Neural Networks/ConvAndPooling.py" target="_blank">手动实现卷积层和池化层</a></li>
+            <li><a href="./utils/layers.py" target="_blank">层</a>
+                <ul>
+                    <li>卷积</li>
+                    <li>最大池化</li>
+                </ul>
+            </li>
+            <li><a href="./utils/images.py" target="_blank">图像</a>
+                <ul>
+                    <li>显示图像</li>
+                </ul>
+            </li>
         </ul>
     </li>
-    <li>使用真实图片
-        <ul>
-            <li><a href="./4th - Using Real-world Images/HorseHumanRecognition.py" target="_blank">人马分类器</a></li>
-            <li><a href="./4th - Using Real-world Images/HappySadClassifier.py" target="_blank">高兴悲伤分类器</a></li>
-        </ul>
-    </li>
-</ol>
+</ul>
 <h2>tensorflow的包结构</h2>
 <ul>
     <li>keras
@@ -66,6 +70,7 @@
                 <ul>
                     <li>Callback</li>
                     <li>TensorBoard</li>
+                    <li>History</li>
                 </ul>
             </li>
             <li>backend
@@ -78,6 +83,7 @@
                     <li>image
                         <ul>
                             <li>ImageDataGenerator</li>
+                            <li>DirectoryIterator</li>
                             <li>load_img</li>
                             <li>img_to_array</li>
                         </ul>
@@ -116,11 +122,11 @@
 <img src="./imgs/inner_weights.png" alt="内部识别结果">
 <h3>卷积层和池化层</h3>
 <p>原图</p>
-<img src="./imgs/ConvAndPooling_0.png" alt="原图" />
+<img src="./imgs/origin.png" alt="原图" />
 <p>卷积后输出</p>
-<img src="./imgs/ConvAndPooling_1.png" alt="卷积后输出" />
+<img src="./imgs/conv.png" alt="卷积后输出" />
 <p>池化后输出</p>
-<img src="./imgs/ConvAndPooling_2.png" alt="最大池化后输出" />
+<img src="./imgs/max_pool.png" alt="最大池化后输出" />
 <h3>人马分类</h3>
 <img src="./imgs/人马图片.png" alt="人马图片" />
 
