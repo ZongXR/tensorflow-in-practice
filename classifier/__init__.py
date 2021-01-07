@@ -16,5 +16,7 @@ __all__ = [
     "HandwritingClassifier",
     "CatDogClassifier",
     "HappySadClassifier",
-    "HorseHumanClassifier"
+    "HorseHumanClassifier",
+    "FashionClassifier",
+    "CatDogClassifierInceptionV3"
 ]

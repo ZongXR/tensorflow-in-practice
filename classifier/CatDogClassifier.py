@@ -65,10 +65,20 @@ class CatDogClassifier:
         :return: 空
         """
         try:
-            self._model.load_weights(self._model_path)
+            self._model.load_weights(self._model_path, by_name=True, skip_mismatch=True)
             return None
         except OSError:
-            train_data = ImageDataGenerator(rescale=1/255).flow_from_directory(
+            train_data = ImageDataGenerator(
+                rotation_range=40,
+                width_shift_range=0.2,
+                height_shift_range=0.2,
+                shear_range=0.2,
+                zoom_range=0.2,
+                horizontal_flip=True,
+                vertical_flip=True,
+                fill_mode="nearest",
+                rescale=1/255
+            ).flow_from_directory(
                 directory=_data + "/train",
                 target_size=CatDogClassifier._SIZE[:-1],
                 class_mode="binary",
@@ -84,19 +94,22 @@ class CatDogClassifier:
             _history = self._model.fit_generator(
                 generator=train_data,
                 validation_data=validation_data,
-                epochs=20,
+                epochs=100,
                 callbacks=[MyCallBack(), logs],
                 workers=-1,
                 use_multiprocessing=True
             )
             return _history
 
-    def save_weights(self) -> None:
+    def save_weights(self, _model_weights: str = None) -> None:
         """
         保存权重\n
+        :param _model_weights: 权重路径
         :return: 空
         """
-        self._model.save_weights(self._model_path)
+        if _model_weights is None:
+            _model_weights = self._model_path
+        self._model.save_weights(_model_weights)
 
     def show_inner(self, _filepath: str, _savepath: str) -> None:
         """
@@ -110,6 +123,7 @@ class CatDogClassifier:
         _x = img_to_array(load_img(_filepath, target_size=CatDogClassifier._SIZE[:-1]))
         _x = np.expand_dims(_x, 0)
         _x = _x / 255.0
+        # 本质是用输入图像乘以权重
         successive_feature_maps = visualization_model.predict(_x)
         layer_names = [layer.name for layer in self._model.layers]
         for c, (layer_name, feature_map) in enumerate(zip(layer_names, successive_feature_maps)):
@@ -133,6 +147,7 @@ class CatDogClassifier:
                 plt.figure(c+1, figsize=(scale * n_features, scale))
                 plt.title(layer_name)
                 plt.grid(False)
+                plt.tight_layout()
                 plt.imshow(display_grid, aspect='auto', cmap='viridis')
                 plt.savefig(_savepath + "/%s.jpg" % layer_name)
                 plt.show()

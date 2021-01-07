@@ -3,6 +3,7 @@
 这是coursera平台<a href="https://www.coursera.org/professional-certificates/tensorflow-in-practice" target="_blank">tensorflow课程</a>代码，随堂练习+课后作业
 <ol>
     <li><a href="https://www.coursera.org/learn/introduction-tensorflow" target="_blank">tensorflow入门</a></li>
+    <li><a href="https://www.coursera.org/learn/convolutional-neural-networks-tensorflow" target="_blank">tensorflow的卷积神经网络</a></li>
 </ol>
 <h2>模型</h2>
 <ul>
@@ -13,6 +14,7 @@
             <li><a href="./classifier/HorseHumanClassifier.py" target="_blank">人马分类器</a></li>
             <li><a href="./classifier/HappySadClassifier.py" target="_blank">高兴悲伤分类器</a></li>
             <li><a href="./classifier/CatDogClassifier.py" target="_blank">猫狗分类器</a></li>
+            <li><a href="./classifier/CatDogClassifierInceptionV3.py" target="_blank">基于InceptionV3迁移的猫狗分类器</a></li>
         </ul>
     </li>
     <li>回归
@@ -40,18 +42,26 @@
 <ul>
     <li>keras
         <ul>
+            <li>Input</li>
             <li>layers
                 <ul>
                     <li>Dense</li>
                     <li>Flatten</li>
                     <li>Conv2D</li>
                     <li>MaxPooling2D</li>
+                    <li>GlobalAveragePooling2D</li>
+                    <li>Dropout</li>
                 </ul>
             </li>
             <li>models
                 <ul>
                     <li>Sequential</li>
                     <li>Model</li>
+                </ul>
+            </li>
+            <li>losses
+                <ul>
+                    <li>BinaryCrossentropy</li>
                 </ul>
             </li>
             <li>datasets
@@ -73,6 +83,12 @@
                     <li>History</li>
                 </ul>
             </li>
+            <li>applications
+                <ul>
+                    <li>InceptionV3</li>
+                    <li>MobileNetV2</li>
+                </ul>
+            </li>
             <li>backend
                 <ul>
                     <li>clear_session</li>
@@ -80,6 +96,7 @@
             </li>
             <li>preprocessing
                 <ul>
+                    <li>image_dataset_from_directory</li>
                     <li>image
                         <ul>
                             <li>ImageDataGenerator</li>
@@ -131,6 +148,7 @@
 <img src="./imgs/conv2d_4.jpg" alt="第四层卷积"><br />
 <img src="./imgs/pool2d_4.jpg" alt="第四层池化"><br />
 <img src="./imgs/conv2d_5.jpg" alt="第五层卷积"><br />
+再深的就因为OOM出不来了。。。<br />
 <h3>卷积层和池化层做了些什么</h3>
 <p>原图</p>
 <img src="./imgs/origin.png" alt="原图" />
