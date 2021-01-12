@@ -49,12 +49,14 @@
                     <li>Flatten</li>
                     <li>Conv2D</li>
                     <li>MaxPooling2D</li>
+                    <li>GlobalAveragePooling1D</li>
                     <li>GlobalAveragePooling2D</li>
                     <li>Dropout</li>
                 </ul>
             </li>
             <li>models
                 <ul>
+                    <li>load_model</li>
                     <li>Sequential</li>
                     <li>Model</li>
                 </ul>
@@ -103,6 +105,16 @@
                             <li>DirectoryIterator</li>
                             <li>load_img</li>
                             <li>img_to_array</li>
+                        </ul>
+                    </li>
+                    <li>text
+                        <ul>
+                            <li>Tokenizer</li>
+                        </ul>
+                    </li>
+                    <li>sequence
+                        <ul>
+                            <li>pad_sequences</li>
                         </ul>
                     </li>
                 </ul>
@@ -158,4 +170,5 @@
 <img src="./imgs/max_pool.png" alt="最大池化后输出" />
 <h3>人马分类</h3>
 <img src="./imgs/人马图片.png" alt="人马图片" />
-
+<h3>是否含有讽刺的分类词云</h3>
+<img src="./imgs/词云.gif" alt="词云" />

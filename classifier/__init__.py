@@ -18,5 +18,8 @@ __all__ = [
     "HappySadClassifier",
     "HorseHumanClassifier",
     "FashionClassifier",
-    "CatDogClassifierInceptionV3"
+    "CatDogClassifierInceptionV3",
+    "RockPaperScissorsClassifier",
+    "ImdbClassifier",
+    "SarcasmClassifier"
 ]

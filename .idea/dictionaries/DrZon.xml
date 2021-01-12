@@ -11,6 +11,8 @@
       <w>datasets</w>
       <w>filtor</w>
       <w>idxs</w>
+      <w>imagenet</w>
+      <w>imdb</w>
       <w>imgs</w>
       <w>keras</w>
       <w>matplotlib</w>
@@ -19,9 +21,11 @@
       <w>preprocessing</w>
       <w>regressor</w>
       <w>relu</w>
+      <w>rmsprop</w>
       <w>savepath</w>
       <w>softmax</w>
       <w>sprop</w>
+      <w>tdfs</w>
       <w>tensorflow</w>
     </words>
   </dictionary>

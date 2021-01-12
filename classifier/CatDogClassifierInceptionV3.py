@@ -24,7 +24,7 @@ class CatDogClassifierInceptionV3(CatDogClassifier):
             self,
             _input_shape: (int, ),
             _logs: str,
-            _model_weights: str = "https://storage.googleapis.com/mledu-datasets/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5",
+            _model_weights: str = "imagenet",
     ) -> None:
         """
         构造方法\n
@@ -88,8 +88,8 @@ class CatDogClassifierInceptionV3(CatDogClassifier):
         _history = self._model.fit_generator(
             generator=train_data,
             validation_data=validation_data,
-            epochs=20,
-            callbacks=[EarlyStopByAccuracy(0.85), logs],
+            epochs=100,
+            callbacks=[EarlyStopByAccuracy(0.998), logs],
             workers=-1,
             use_multiprocessing=True
         )

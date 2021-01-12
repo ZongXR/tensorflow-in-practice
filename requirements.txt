@@ -3,3 +3,4 @@ numpy~=1.18.5
 ipython~=7.17.0
 matplotlib~=3.3.1
 scipy~=1.4.1
+joblib~=0.16.0
