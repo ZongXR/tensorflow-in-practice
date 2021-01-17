@@ -21,5 +21,7 @@ __all__ = [
     "CatDogClassifierInceptionV3",
     "RockPaperScissorsClassifier",
     "ImdbClassifier",
-    "SarcasmClassifier"
+    "SarcasmClassifier",
+    "ImdbSubwordsClassifier",
+    "TextGenerator"
 ]

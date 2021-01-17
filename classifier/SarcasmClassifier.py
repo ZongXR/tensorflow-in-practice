@@ -82,6 +82,8 @@ class SarcasmClassifier:
             validation_data=self.pre_process(_x_validation, _y_validation),
             batch_size=32,
             epochs=30,
+            workers=-1,
+            use_multiprocessing=True,
             callbacks=[
                 EarlyStopByAccuracy(0.998),
                 TensorBoard(self._logs)

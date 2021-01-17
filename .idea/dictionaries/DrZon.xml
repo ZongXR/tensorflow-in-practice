@@ -15,6 +15,7 @@
       <w>imdb</w>
       <w>imgs</w>
       <w>keras</w>
+      <w>lstm</w>
       <w>matplotlib</w>
       <w>mnist</w>
       <w>mpimg</w>
@@ -25,8 +26,10 @@
       <w>savepath</w>
       <w>softmax</w>
       <w>sprop</w>
+      <w>subwords</w>
       <w>tdfs</w>
       <w>tensorflow</w>
+      <w>tfds</w>
     </words>
   </dictionary>
 </component>

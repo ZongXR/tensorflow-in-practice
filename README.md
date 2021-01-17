@@ -47,11 +47,14 @@
                 <ul>
                     <li>Dense</li>
                     <li>Flatten</li>
+                    <li>Conv1D</li>
                     <li>Conv2D</li>
                     <li>MaxPooling2D</li>
                     <li>GlobalAveragePooling1D</li>
                     <li>GlobalAveragePooling2D</li>
                     <li>Dropout</li>
+                    <li>LSTM</li>
+                    <li>Bidirectional</li>
                 </ul>
             </li>
             <li>models
@@ -119,6 +122,11 @@
                     </li>
                 </ul>
             </li>
+            <li>utils
+                <ul>
+                    <li>to_categorical</li>
+                </ul>
+            </li>
         </ul>
     </li>
     <li>nn
@@ -139,6 +147,11 @@
                 <ul>
                     <li>ConfigProto</li>
                     <li>Session</li>
+                    <li>data
+                        <ul>
+                            <li>get_output_shapes</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li>v2
