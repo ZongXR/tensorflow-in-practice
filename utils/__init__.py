@@ -3,5 +3,6 @@
 """
 __all__ = [
     "layers",
-    "images"
+    "images",
+    "time_series"
 ]
