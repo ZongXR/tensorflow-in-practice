@@ -1,4 +1,5 @@
 tensorflow-gpu~=2.3.0
+tensorflow-datasets~=4.2.0
 numpy~=1.18.5
 ipython~=7.17.0
 matplotlib~=3.3.1
