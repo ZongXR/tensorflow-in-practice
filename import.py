@@ -1,4 +1,5 @@
 import tensorflow as tf
+import tensorflow_datasets as tfds
 from tensorflow.keras.layers import Input, Dense, Flatten, Conv2D, MaxPool2D, Conv1D, GlobalAveragePooling1D, GlobalAveragePooling2D, Dropout, LSTM, Bidirectional
 from tensorflow.keras.models import Model, Sequential, load_model
 from tensorflow.keras.optimizers import RMSprop, Adam
@@ -10,3 +11,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.metrics import mean_absolute_error
 
+
+den = Flatten(
+
+)
