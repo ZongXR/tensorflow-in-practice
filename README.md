@@ -221,8 +221,9 @@
 <h3>生成时间序列的回归预测</h3>
 <img src="./imgs/时间序列回归.png" alt="时间序列预测" />
 <h2>证书展示</h2>
-<img src="./imgs/CourseraTensorflow_0.png" alt="NLP" /><br />
+<a href="https://developers.google.com/certification/directory/tensorflow?hl=zh-cn" target="_blank"><img src="./imgs/TensorFlow认证.jpg" alt="tensorflow认证" /></a><br />
+<img src="./imgs/CourseraTensorflow_0.png" alt="total" /><br />
 <img src="./imgs/CourseraTensorflow_1.png" alt="DNN" /><br />
 <img src="./imgs/CourseraTensorflow_2.png" alt="CV" /><br />
 <img src="./imgs/CourseraTensorflow_3.png" alt="NLP" /><br />
-<img src="./imgs/CourseraTensorflow_4.png" alt="NLP" /><br />
+<img src="./imgs/CourseraTensorflow_4.png" alt="time_series" /><br />
