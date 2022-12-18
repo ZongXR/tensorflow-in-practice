@@ -64,6 +64,10 @@
 </ul>
 <h2>tensorflow的包结构</h2>
 <ul>
+    <li>GradientTape</li>
+    <li>Module</li>
+    <li>Tensor</li>
+    <li>Variable</li>
     <li>keras
         <ul>
             <li>Input</li>
@@ -173,6 +177,20 @@
     </li>
     <li>data
         <ul>Dataset</ul>
+    </li>
+    <li>python
+        <ul>
+            <li>ops
+                <ul>
+                    <li>math_ops
+                        <ul>
+                            <li>squared_difference</li>
+                            <li>cast</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </li>
     <li>compat
         <ul>
