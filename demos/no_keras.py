@@ -2,16 +2,29 @@
 """
 完全不使用keras高阶API
 """
-from typing import Tuple
+from typing import Tuple, List
 import tensorflow as tf
 from tensorflow import Module, Tensor, Variable, GradientTape, random_normal_initializer
 from tensorflow.keras.datasets.boston_housing import load_data
+from tensorflow.python.ops.math_ops import cast, squared_difference
 
 
 physical_devices = tf.config.list_physical_devices('GPU')
 for device in physical_devices:
     tf.config.experimental.set_memory_growth(device, True)
 tf.compat.v1.reset_default_graph()
+
+
+def gradient_descent(_learning_rate: float, _grads: List[Tensor], _vars: List[Variable]) -> None:
+    """
+    梯度下降\n
+    :param _learning_rate: 学习率
+    :param _grads: 梯度
+    :param _vars: 参数
+    :return: 空
+    """
+    for i, _x in enumerate(_vars):
+        _x.assign(_x - _learning_rate * _grads[i].numpy())
 
 
 class LinearRegression(Module):
@@ -37,8 +50,8 @@ if __name__ == '__main__':
     for epoch in range(500):
         with GradientTape() as tape:
             y_pred = model(x_train)
-            loss = tf.losses.MeanSquaredError()(y_train, y_pred)
+            loss = tf.reduce_mean(squared_difference(y_train, cast(y_pred, y_train.dtype)))
         tf.print("--------------epoch: %d, loss: %f --------------" % (epoch, loss.numpy()))
         grads = tape.gradient(loss, model.trainable_variables)
-        optimizer.apply_gradients(zip(grads, model.trainable_variables))
+        gradient_descent(1e-6, grads, model.trainable_variables)
 
